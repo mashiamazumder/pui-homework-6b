@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Product Browsing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Navigation Bar --> 
+    <div class="nav" id="navhome">
+      <div  id="navback" style="background-color:#732006;"></div>
+
+      <ul>
+        <li> <a href="index.html"> HOME </a></li> 
+        <li>SHOP</li> 
+        <li> FILL </li>
+        <li> ABOUT </li> 
+        <li> CONTACT </li>
+      </ul>
+
+      <div id="carticon"> </div>
+
+      <div class="logof">
+        <div  id="e1_18"> </div>
+        <div  id="e1_19"> </div>
+      </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="container">
+
+      <h2 style="margin-top: 100px;margin-bottom:15px;color:#732006;"> SHOPPING CART </h2>
+
+      <!-- Grid of Product Cards --> 
+      <main class="cartgrid">
+
+        <!-- Product Card 1 -->
+        <div class="order">
+          <a href="product1.html"><img class="prod-img" src="images/original-roll.jpeg" alt="Original Cinnamon Roll" /></a>
+          <div class="prod-info">
+            <h3>Original</h3>
+            <h4>$3.99</h4>
+            <a href="product1.html"><img class="plus-img" src="images/plus.png"  style="margin-top: 65px;" alt="Plus icon"/></a>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="order">
+          <a href="product2.html"><img class="prod-img" src="images/gf-roll.png" alt="Gluten-Free Original Cinnamon Roll"/></a>
+          <div class="prod-info">
+            <h3>Original<br>Gluten-Free</h3>
+            <h4>$4.99</h4>
+            <a href="product2.html"><img class="plus-img" src="images/plus.png"  alt="Plus icon"/></a>
+          </div>
+        </div>
+
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="foot"> 
+          <p class="foot-text">Bun Bun Bake Shop</p>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+
+</html>

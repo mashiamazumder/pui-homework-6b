@@ -1,0 +1,576 @@
+/* Style Sheet for Bun Bun Bake Shop website 
+   Mashia Mazumder (mmazumde)
+   PUI Spring 2021
+*/
+
+/* -------------- SECTION 1: General Styles --------------
+   Classes in this section are used across multiple pages
+*/
+
+/* Header styles */
+
+h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 136%; 
+  text-align: center;
+  letter-spacing: 1px;
+  color: #14142B;
+}
+
+h3 {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #ffa500;
+  padding: 10px 0px 10px 10px;
+  margin-bottom: 0px;
+}
+
+h4 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: rgba(0,0,0,0.8);
+  padding: 5px 0px 10px 10px;
+  margin-top:0px;
+}
+
+/* Footer */
+footer {
+  background-color: #ffa500;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Formatting links (for nav bar)
+   NOTE: Code below is adapted from W3Schools "CSS Links" tutorial 
+   found at https://www.w3schools.com/css/css_link.asp
+*/
+a {
+  color:white;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Bar */
+.nav {
+  margin:0;
+  padding: 20px 0;
+
+}
+
+/* List items in nav bar */
+.nav li {
+  color:white;
+  font-family:Poppins;
+  text-align:center;
+  font-size:15px;
+  letter-spacing:2px;
+  line-height: 6.5px;
+  position:relative;
+  left:339px;
+  display: inline-block;
+  width: 135px;
+}
+
+/* Maroon block of navigation bar */
+#navback { 
+  background-color:rgba(109, 26, 2, 0.85);
+  width:1441px;
+  height:100px;
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+/* Logo placement, overlaps with navigation bar */
+.logof { 
+  width:202px;
+  height:166px;
+  position:absolute;
+  left:619px;
+  top:17px;
+}
+
+/* Off-white circle behind logo */
+#e1_18 { 
+  border-radius:500px;
+  background-color:rgba(255, 252, 238, 1);
+  width:126px;
+  height:126px;
+  position:absolute;
+  left:38px;
+  top:20px;
+}
+
+/* Logo image */ 
+#e1_19 { 
+  width:202px;
+  height:166px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  background-image:url(images/cinnamon-roll-logo.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+/* Cart image for nav bar*/ 
+#carticon {
+    position: absolute;
+    width: 45px;
+    height: 37px;
+    left: 1340px;
+    top: 35px;
+    background: url(images/shopping-cart-icon.png);
+    background-size: 45px;
+}
+
+/* Call-to-action button element 
+   Used with "Order Now" and "Add to Cart" buttons 
+*/
+#e1_22 { 
+  width:200px;
+  height:60px;
+  position:absolute;
+  left:620px;
+  top:189px;
+}
+
+/* Call-to-action button fill */
+#e1_23 { 
+  background-color:rgba(223, 178, 72, 1);
+  width:200px;
+  height:60px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  border-radius: 5px;
+}
+
+/* Footer Text - used for shop name */
+.foot-text {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: white;
+  padding: 35px 0px 10px 10px;
+  margin-bottom: 0px;
+}
+
+/* Container for footer text */ 
+.foot {
+  width: 100%;
+  height: 100px;
+  background-color: #ffa500;
+}
+
+
+/* ------------- SECTION 2: Home Page ------------- */
+
+/* Large background image  */
+#banner { 
+  width:1440px;
+  height:800px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  background-image:url(images/banner-background.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  box-shadow:0 3000px rgb(50 20 0 / 36%) inset;
+}
+
+/* Text placement on banner */
+#banner-text { 
+  width:1440px;
+  height:249px;
+  position:absolute;
+  left:1px;
+  top:326px;
+}
+
+/* Sub-header, placed above large banner text
+   used for "Artisan Rolls" text */
+#subt { 
+  color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/* Large text at center of banner - "Bun Bun Bake Shop" */
+#center-text { 
+  color:rgba(255, 255, 255, 1);
+  width:998px;
+  height:139px;
+  position:absolute;
+  left:221px;
+  top:14px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 96px;
+  line-height: 0px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Small bar under banner title "Bun Bun Bake Shop" */
+#bar { 
+  background-color:rgba(223, 178, 72, 1);
+  width:60px;
+  height:6px;
+  position:relative;
+  top:480px;
+  margin-left: auto;
+  margin-right:auto;
+  border-radius: 50px;
+}
+
+/* "Order Now" Button */
+#orderButton { 
+  position: absolute;
+  left: 51%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  transform: translate(-50%,0%);
+  width: fit-content;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color:white;
+
+}
+
+/* Pointing arrow to guide users to scroll down on home page */
+#pointer { 
+  width:60px;
+  height:60px;
+  position:absolute;
+  left:690px;
+  top:657px;
+}
+
+/* The 3 elements below are children of the pointer element */
+#pointer-elems { 
+  width:60px;
+  height:60px;
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+#outer-circle { 
+  border-radius:500px;
+  border:1px solid white;
+  width:60px;
+  height:60px;
+  position:absolute;
+  left:-1px;
+  top:0px;
+}
+#inner-circle { 
+  border-radius:500px;
+  background-color:white;
+  width:40px;
+  height:40px;
+  position:absolute;
+  left:10px;
+  top:10px;
+}
+
+/* Arrow icon 
+   NOTE: This code was taken from W3Schools "CSS Arrows" examples 
+   found at https://www.w3schools.com/howto/howto_css_arrows.asp
+*/
+.arrow {
+    border: solid rgb(223 178 72);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 7px;
+}
+
+/* Combine with arrow, for arrow pointing down */
+.down {
+  transform: rotate(45deg);
+}
+/* --- End of arrow code --- */
+
+/* Container - Used to create row with 2 colored columns */
+.splitrow {
+    width: 50%;
+    height: 433px;
+    position: absolute;
+    top: 800px;
+}
+
+/* Title formatting for home page rows */
+#home-row1 { 
+  position: absolute;
+  width:365px;
+  height:102px;
+  left:900px;
+  top:880px;
+}
+
+/* Caption formatting for home page rows */
+#home-row1-subt { 
+  color:rgb(20,19,42);
+  width:438px;
+  position:absolute;
+  left:864px;
+  top:1035px;
+  font-family:Poppins;
+  text-align:center;
+  font-size:19px;
+  letter-spacing:0.75;
+  line-height:px;
+}
+
+/* Image for home page row 1 */
+#hpicon{
+    position: absolute;
+    width: 450px;
+    height: 380px;
+    left: 114px;
+    top: 790px;
+    background: url(images/truck_icon.png);
+    background-size: cover;
+}
+
+/* ------------- SECTION 3: Product Gallery ------------- */
+
+/* Grid for product gallery 
+   NOTE: This code was adapted from a Codeacamy "Advanced CSS Grid" lesson,
+   accessed through the "Grid" chapter of the "Learn CSS" introductory course. 
+   https://www.codecademy.com/courses/learn-css/lessons/css-grid-ii/exercises/review-ii
+
+   I adjusted the code to match specific column and row dimensions, gaps, and areas. 
+*/
+main {
+  display: grid;
+  grid-template-columns: 430px 430px;
+  grid-template-rows: repeat(3, 270px);
+  grid-gap: 75px;
+  margin-top: 45px;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  grid-auto-rows: 500px;
+  grid-auto-flow: column;
+}
+
+.container {
+  min-width: 500px;
+  margin: auto;
+  grid-template-areas: "left right"
+                       "footer footer";
+  grid-template-columns: 200px 400px;
+  grid-template-rows: 150px 200px 600px 200px;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+/* --- End of code adapted from Codecademy -- */
+
+/* Product card in grid cell */
+.order {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  border-top-left-radius:30px;
+  border-top-right-radius:30px;
+  border-bottom-left-radius:30px;
+  border-bottom-right-radius:30px;
+  height: 270px;
+}
+
+/* Image on product cards */
+.prod-img{
+  width: 240px;
+  object-fit: cover;
+  height: 270px;
+  border-top-left-radius:30px;
+  border-bottom-left-radius:30px;
+  float: left;
+}
+
+/* Content on product cards */
+.prod-info {
+  float: right;
+  width: 150px;
+
+  .content {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Plus icon at the bottom right of product cards */
+.plus-img{
+  width: 50px;
+  object-fit: cover;
+  height: 50px;
+  float:right;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  top: 35px;
+  margin-top: 35px;
+}
+
+/* Dropdown Button 
+   NOTE: the code below pertaining to the dropdown button was adapted from 
+   W3Schools example at https://www.w3schools.com/howto/howto_css_dropdown.asp
+   I adjusted the code to match the site's font and color patterns. 
+*/
+.dropbtn {
+  background-color: #ffa500;
+  font-family: Poppins;
+  color: white;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left:50%;
+  transform: translate(-50%,0px);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  font-family: Poppins;
+  font-size:13.5px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #E49400;}
+/* -- End of Dropdown Menu code -- */
+
+
+/* ------------- SECTION 4: Individual Product Pages ------------- */
+
+/* Element for 2-column layout */
+.prod {
+  width: 50%;
+  display: inline-block;
+}
+
+/* Container for product info */
+#prod-order {
+  width:40%;
+  position: absolute;
+  top: 200px;
+  left: 55%; /* Positioned as right column */
+}
+
+/* Font styling for product details */
+.description {
+  font-family: Open Sans;
+  font-size: 13px; 
+  font-weight: 400px;
+  color: rgba(0,0,0,0.8);
+  letter-spacing: 0.3px;
+  line-height: 1.6em;
+  text-align: left;
+  padding: 10px 0px 10px 10px;
+  margin-bottom: 0px;
+}
+
+/* Links in product page, e.g. 'Return to Shop' */
+.grey a:hover {
+  text-decoration: underline;
+  color: rgba(0,0,0,0.8);
+}
+
+/* Positioning Add to Cart button */
+#addButton1 { 
+  width:200px;
+  height:60px;
+  position:absolute;
+  left:50%;
+}
+
+/* ------------- SECTION 4: Shopping Cart Page ------------- */
+
+.cartgrid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* grid-template-rows: repeat(3, 500px); */
+  grid-gap: 75px;
+  margin-top: 45px;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  /* grid-auto-rows: 500px; */
+  grid-auto-flow: column;
+}
+
